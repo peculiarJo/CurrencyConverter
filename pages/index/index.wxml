@@ -1,0 +1,34 @@
+<view class="page-section">
+  <view class="page__hd">
+    <view class="page__title">换换钱</view>
+        <view class="page__desc">一个简易汇率转换器</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <picker bindchange='bindBaseCurrency' value="{{baseIndex}}" range='{{currencies}}'>
+          <view class="weui-select">{{currencies[baseIndex]}}</view>
+        </picker>
+      </view>
+      <view class="weui-flex__item">
+        <input min="0" class="weui-input" value="{{base}}" type="digit" bindinput='bindBase'/>
+      </view>
+    </view>
+    <view class="icon-center">
+      <view class="icon-exchange"></view>
+    </view>
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <picker bindchange='bindTargetCurrency' value="{{targetIndex}}" range='{{currencies}}'>
+          <view class="weui-select">{{currencies[targetIndex]}}</view>
+        </picker>
+      </view>
+      <view class="weui-flex__item ">
+        <input class="weui-input" value="{{target}}" type="digit" bindinput='bindTarget'/>
+      </view>
+    </view>
+    <view class="weui-footer weui-footer_fixed-bottom">
+      <view class="weui-footer__text">Copyright © 2008-2016 peculiarJo.github.io</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"projectname": "mini%20program",
+	"scripts": {
+		"beforeCompile": "tsc -w",
+		"beforePreview": "tsc -w",
+		"beforeUpload": "tsc -w"
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false,
+		"autoAudits": false
+	},
+	"appid": "wx91e3876f75a5a74e",
+	"condition": {}
+}
